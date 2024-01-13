@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.banner-content{
+    max-width: 700px;
+    text-align: center;
+    margin: 30px auto;
+}
+.banner-title{
+    max-width: 500px;
+    margin: 0 auto;
+    color: #131313;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: 0;
+    margin-top: 30px;
+}
+.banner img{
+    width: 100%;
+}
+
+main{
+    max-width: 75%;
+    margin: 50px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-left: 50px;
+}
+.team-content{
+    margin: 0 70px;
+}
+.team-content h3{
+    font-size: 2.8125rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 2.6rem;
+    }
+    .teams-container{
+        flex-direction: column-reverse;
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+    }
+    .team-content{
+        margin: 0 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+}
